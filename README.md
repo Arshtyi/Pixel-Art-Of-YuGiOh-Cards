@@ -42,13 +42,14 @@ python generate.py
 
 ### `generate.py`
 
-```bash
+```
 python generate.py [--input-dir TMP] [--output-dir TARGET] [--pixel-size N] [--quantize] [--colors C] [--yes]
 ```
 
 ### `start.sh`
 
-```bash
+```
+❯ ./start.sh --help
 Usage: start.sh [--no-venv] [--venv-dir DIR] [--skip-install] [--help] -- [generate.py args]
 
 Options:

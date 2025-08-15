@@ -134,7 +134,7 @@ def main(argv: Optional[list[str]] = None) -> int:
             colors = ask_int("颜色数量 (用于减色，建议 8-64)", colors or 32)
     print(f"找到 {len(files)} 个 PNG 文件，将从 '{input_dir}' -> '{output_dir}' 进行处理")
     print(f"像素块大小: {pixel_size}, 减色: {quantize}, 颜色数: {colors}")
-    if not args.yes:
+    if not skip_prompts:
         cont = ask_bool("确认开始处理吗?", True)
         if not cont:
             print("已取消")
@@ -146,7 +146,7 @@ def main(argv: Optional[list[str]] = None) -> int:
             if abs_out == os.path.abspath(os.sep):
                 print("拒绝清空根目录。")
                 return 2
-            if not args.yes:
+            if not skip_prompts:
                 clean_confirm = ask_bool(f"将清空目录 '{output_dir}' 中的所有内容，继续吗?", False)
                 if not clean_confirm:
                     print("取消清空目标目录，已退出。")
