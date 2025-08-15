@@ -1,0 +1,7 @@
+*.conda
+*.venv
+*.vscode
+/tmp/
+/target/
+__pycache__/
+/cfg/
