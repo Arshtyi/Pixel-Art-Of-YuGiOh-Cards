@@ -2,6 +2,29 @@
 
 将游戏王卡图转化为像素图(近期流行，AIGC 了一个)
 
+## 效果展示
+
+参数
+
+```json
+"pixel_size": 16,"quantize": true,"colors": 32
+```
+
+<center class="half">
+<img src="res/57734012.png" width=200/>
+<img src="res/86066372.png" width=200/>
+<img src="res/29301450.png" width=200/>
+</center>
+
+```json
+"pixel_size": 8,"quantize": false,"colors": 32
+```
+
+<center class="half">
+<img src="res/27420823.png" width=200/>
+<img src="res/48348921.png" width=200/>
+<img src="res/60461804.png" width=200/>
+</center>
 ## 结构
 
 -   `cfg`:配置
